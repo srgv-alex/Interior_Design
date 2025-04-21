@@ -4,9 +4,9 @@ $(document).ready(function () {
 		loop: true,
 		smartSpeed: 600,
 		margin: 5,
-		autoplay: true,
-		autoplayTimeout: 4000,
-		autoplayHoverPause: true,
+		// autoplay: true,
+		// autoplayTimeout: 4000,
+		// autoplayHoverPause: true,
 	});
 
 	$('.slider-next').click(function () {
@@ -14,5 +14,15 @@ $(document).ready(function () {
 	});
 	$('.slider-prev').click(function () {
 		$('.header-slider').trigger('prev.owl.carousel');
+	});
+
+	Fancybox.bind('[data-fancybox]', {
+		Toolbar: {
+			display: {
+				left: [],
+				middle: [],
+				right: ['close'],
+			},
+		},
 	});
 });

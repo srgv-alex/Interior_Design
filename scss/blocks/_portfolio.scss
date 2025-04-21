@@ -1,0 +1,23 @@
+.portfolio {
+	padding: 88px 0 100px;
+	color: #e5e5e5;
+}
+
+.portfolio-content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.portfolio-card {
+	width: 400px;
+	height: 450px;
+	overflow: hidden;
+	&:hover img {
+		transform: scale(1.05);
+		filter: grayscale(1);
+	}
+	img {
+		transition: filter 0.3s, transform 0.3s;
+	}
+}

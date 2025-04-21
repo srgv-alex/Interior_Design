@@ -243,11 +243,39 @@ p + p {
   margin-bottom: 127px;
 }
 
+.portfolio {
+  padding: 88px 0 100px;
+  color: #e5e5e5;
+}
+
+.portfolio-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.portfolio-card {
+  width: 400px;
+  height: 450px;
+  overflow: hidden;
+}
+.portfolio-card:hover img {
+  transform: scale(1.05);
+  filter: grayscale(1);
+}
+.portfolio-card img {
+  transition: filter 0.3s, transform 0.3s;
+}
+
 .header-title {
   max-width: 463px;
 }
 .header-title .title {
   margin-bottom: 10px;
+}
+
+.portfolio__title {
+  margin-bottom: 51px;
 }
 
 .promo-video {
@@ -280,11 +308,16 @@ p + p {
   align-items: center;
   column-gap: 23px;
 }
+.promo-video__text p {
+  color: #000;
+  padding-top: 20px;
+}
 
 .promo-video__btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 21px;
   width: 78px;
   height: 78px;
   border-radius: 50%;
