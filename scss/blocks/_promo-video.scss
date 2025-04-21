@@ -1,0 +1,40 @@
+.promo-video {
+	width: fit-content;
+	display: flex;
+	cursor: pointer;
+	img {
+		transition: all 0.5s;
+	}
+	img:hover {
+		filter: grayscale(1);
+	}
+	p {
+		max-width: 170px;
+		line-height: 1.71429;
+		transition: color 0.5s;
+	}
+	&:hover p {
+		color: #ce9d59;
+	}
+	&:hover .promo-video__btn {
+		background-color: #ce9d59;
+	}
+}
+
+.promo-video__text {
+	position: relative;
+	left: -39px;
+	display: flex;
+	align-items: center;
+	column-gap: 23px;
+}
+.promo-video__btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 78px;
+	height: 78px;
+	border-radius: 50%;
+	background-color: #f6d5a7;
+	transition: background-color 0.5s;
+}

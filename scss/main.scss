@@ -6,6 +6,11 @@
 
 // Секции
 
+@import './blocks/header';
+
 // Блоки, Элементы
+@import './blocks/title';
+@import './blocks/promo-video';
 
 // Скрипты
+@import './blocks/slider';

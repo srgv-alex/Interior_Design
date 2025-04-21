@@ -1,0 +1,43 @@
+.header {
+	position: relative;
+	height: 800px;
+	background: #f9f8f6;
+}
+
+.header-top {
+	padding-top: 30px;
+	height: 70px;
+	background: #fff;
+}
+
+.header__nav {
+	a {
+		text-transform: uppercase;
+	}
+	a + a {
+		margin-left: 40px;
+	}
+	a:hover {
+		position: relative;
+		color: #f6d5a7;
+		transition: 0.5s;
+	}
+	a::before {
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 1px;
+		left: 0;
+		bottom: 0;
+		background-color: #f6d5a7;
+	}
+	a:hover::before {
+		width: 100%;
+		transition: 0.5s;
+	}
+}
+
+.header-title {
+	padding-top: 193px;
+	margin-bottom: 127px;
+}
