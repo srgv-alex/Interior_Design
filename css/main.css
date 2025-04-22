@@ -131,10 +131,6 @@ button:focus-visible {
   outline: #005fcc auto 1px;
 }
 
-p + p {
-  margin-top: 1em;
-}
-
 .title,
 .title2 {
   font-family: "Lora", sans-serif;
@@ -267,6 +263,53 @@ p + p {
   transition: filter 0.3s, transform 0.3s;
 }
 
+.about {
+  padding: 100px 0 197px;
+  background-color: #574e56;
+  color: #fff;
+}
+
+.about__content {
+  display: flex;
+  align-items: center;
+  column-gap: 115px;
+}
+
+.about__img {
+  flex-shrink: 0;
+}
+
+.about__desc {
+  max-width: 456px;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 36px;
+  row-gap: 25px;
+  line-height: 1.7;
+}
+.about__text p + p {
+  margin-top: 0;
+}
+
+.about__statistic {
+  display: flex;
+  column-gap: 112px;
+}
+
+.num {
+  font-family: "Lora", serif;
+  font-size: 100px;
+  line-height: 128px;
+  color: #f6d5a7;
+}
+
+.animated-number .num {
+  opacity: 0;
+}
+
 .header-title {
   max-width: 463px;
 }
@@ -276,6 +319,14 @@ p + p {
 
 .portfolio__title {
   margin-bottom: 51px;
+}
+
+.about__title {
+  margin-bottom: 97px;
+}
+
+.title2--white {
+  color: #fff;
 }
 
 .promo-video {

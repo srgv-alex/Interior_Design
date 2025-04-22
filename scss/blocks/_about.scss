@@ -1,0 +1,45 @@
+.about {
+	padding: 100px 0 197px;
+	background-color: #574e56;
+	color: #fff;
+}
+
+.about__content {
+	display: flex;
+	align-items: center;
+	column-gap: 115px;
+}
+.about__img {
+	flex-shrink: 0;
+}
+.about__desc {
+	max-width: 456px;
+}
+.about__text {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 36px;
+	row-gap: 25px;
+	line-height: 1.7;
+	p + p {
+		margin-top: 0;
+	}
+}
+.about__statistic {
+	display: flex;
+	column-gap: 112px;
+}
+.about__statistic-item {
+}
+.num {
+	font-family: 'Lora', serif;
+	font-size: 100px;
+	line-height: 128px;
+	color: #f6d5a7;
+}
+
+.animated-number {
+	.num {
+		opacity: 0;
+	}
+}
