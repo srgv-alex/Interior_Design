@@ -66,6 +66,8 @@ address {
 
 /* Form */
 input,
+input::placeholder,
+textarea::placeholder,
 textarea,
 button,
 select {
@@ -91,7 +93,8 @@ input[type=submit] {
 input:focus,
 input:active,
 button:focus,
-button:active {
+button:active,
+textarea {
   outline: none;
 }
 
@@ -145,6 +148,7 @@ button:focus-visible {
 
 .text-upper {
   font-size: 13px;
+  text-transform: uppercase;
   letter-spacing: 0.06em;
   color: #574e56;
 }
@@ -308,6 +312,91 @@ button:focus-visible {
 
 .animated-number .num {
   opacity: 0;
+}
+
+.contacts {
+  padding: 88px 0 146px;
+}
+
+.contacts__title {
+  margin-bottom: 91px;
+}
+
+.contacts__content {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 125px;
+}
+
+.contacts-form-wrapper {
+  width: 505px;
+  flex-shrink: 0;
+}
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  max-width: 505px;
+}
+
+.contacts-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 62px 67px;
+}
+.contacts-list__item {
+  display: flex;
+  column-gap: 20px;
+}
+.contacts-list__item a {
+  line-height: 1.71429;
+  color: #907965;
+}
+.contacts-list__text .text-upper {
+  margin-bottom: 3px;
+}
+.contacts-list__text p + p {
+  margin-top: 3px;
+  color: #91756a;
+}
+
+.form-input,
+.form-textarea {
+  padding: 26px 20px 20px;
+  width: 100%;
+  height: 65px;
+  line-height: 1.71429;
+  background: rgba(196, 196, 196, 0);
+  border: 1px solid #ddd;
+  color: #000;
+}
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #aca9a9;
+}
+
+.form-textarea {
+  padding: 27px 20px 0 20px;
+  height: 246px;
+  resize: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 70px;
+  height: 65px;
+  font-size: 13px;
+  line-height: 65px;
+  text-transform: uppercase;
+  color: #574e56;
+  border: 1px solid rgba(221, 221, 221, 0);
+  background: #f6d5a7;
+  transition: background 0.3s ease-in, color 0.3s;
+}
+.btn:hover {
+  color: #fff;
+  background: #d4ae79;
 }
 
 .header-title {

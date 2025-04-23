@@ -1,0 +1,48 @@
+.contacts {
+	padding: 88px 0 146px;
+}
+
+.contacts__title {
+	margin-bottom: 91px;
+}
+
+.contacts__content {
+	display: flex;
+	align-items: flex-start;
+	column-gap: 125px;
+}
+.contacts-form-wrapper {
+	width: 505px;
+	flex-shrink: 0;
+}
+.contacts-form {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	max-width: 505px;
+}
+
+.contacts-list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 62px 67px;
+	&__item {
+		display: flex;
+		column-gap: 20px;
+
+		a {
+			line-height: 1.71429;
+			color: #907965;
+		}
+	}
+
+	&__text {
+		.text-upper {
+			margin-bottom: 3px;
+		}
+		p + p {
+			margin-top: 3px;
+			color: #91756a;
+		}
+	}
+}

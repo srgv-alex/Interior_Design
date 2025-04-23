@@ -67,6 +67,8 @@ address {
 /* Form */
 
 input,
+input::placeholder,
+textarea::placeholder,
 textarea,
 button,
 select {
@@ -92,7 +94,8 @@ input[type='submit'] {
 input:focus,
 input:active,
 button:focus,
-button:active {
+button:active,
+textarea {
 	outline: none;
 }
 
