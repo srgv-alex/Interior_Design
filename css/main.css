@@ -399,6 +399,13 @@ button:focus-visible {
   background: #d4ae79;
 }
 
+.footer__text {
+  padding: 51px 0;
+  text-align: center;
+  line-height: 1.71429;
+  color: #574e56;
+}
+
 .header-title {
   max-width: 463px;
 }

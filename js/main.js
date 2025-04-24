@@ -2,11 +2,11 @@ $(document).ready(function () {
 	$('.header-slider').owlCarousel({
 		items: 1,
 		loop: true,
-		smartSpeed: 600,
+		smartSpeed: 700,
 		margin: 5,
-		// autoplay: true,
-		// autoplayTimeout: 4000,
-		// autoplayHoverPause: true,
+		autoplay: true,
+		autoplayTimeout: 4000,
+		autoplayHoverPause: true,
 	});
 
 	$('.slider-next').click(function () {
