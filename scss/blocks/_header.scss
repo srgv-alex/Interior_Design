@@ -2,6 +2,10 @@
 	position: relative;
 	height: 800px;
 	background: #f9f8f6;
+	@include respond-to(360px) {
+		width: 460px;
+		height: 650px;
+	}
 }
 
 .header-top {
@@ -35,9 +39,17 @@
 		width: 100%;
 		transition: 0.5s;
 	}
+
+	@include respond-to(575px) {
+		display: flex;
+		justify-content: center;
+	}
 }
 
 .header-title {
 	padding-top: 193px;
 	margin-bottom: 127px;
+	@include mobile {
+		padding-top: 70px;
+	}
 }

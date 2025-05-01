@@ -1,12 +1,23 @@
 .portfolio {
 	padding: 88px 0 100px;
 	color: #e5e5e5;
+	@include mobile {
+		padding: 16px 0 50px;
+	}
 }
 
 .portfolio-content {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	gap: 20px;
+	@include mobile {
+		justify-content: flex-start;
+	}
+
+	@include respond-to(575px) {
+		justify-content: center;
+	}
 }
 
 .portfolio-card {
@@ -19,5 +30,16 @@
 	}
 	img {
 		transition: filter 0.3s, transform 0.3s;
+		@include respond-to(575px) {
+			width: 100%;
+		}
+	}
+
+	@include respond-to(1299px) {
+		width: 296px;
+		height: 334px;
+	}
+	@include respond-to(575px) {
+		width: 100%;
 	}
 }

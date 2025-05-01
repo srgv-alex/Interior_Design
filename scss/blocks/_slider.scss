@@ -18,12 +18,25 @@
 		height: 800px;
 		object-fit: cover;
 	}
+
+	@media (min-width: 1999px) {
+		max-width: 1000px;
+	}
+
+	@include mobile {
+		display: none;
+	}
 }
+
 .header-slider__nav {
 	position: absolute;
 	right: 81px;
 	bottom: 35px;
 	z-index: 2;
+
+	@include mobile {
+		display: none;
+	}
 }
 
 .owl-dots button.owl-dot.active span {

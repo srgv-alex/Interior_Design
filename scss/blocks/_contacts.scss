@@ -1,19 +1,36 @@
 .contacts {
 	padding: 88px 0 146px;
+	@include mobile {
+		padding: 34px 0 36px;
+	}
 }
 
 .contacts__title {
 	margin-bottom: 91px;
+	@include mobile {
+		margin-bottom: 33px;
+	}
 }
 
 .contacts__content {
 	display: flex;
 	align-items: flex-start;
 	column-gap: 125px;
+	@include respond-to(1299px) {
+		column-gap: 55px;
+	}
+	@include mobile {
+		flex-wrap: wrap;
+		justify-content: center;
+		row-gap: 45px;
+	}
 }
 .contacts-form-wrapper {
 	width: 505px;
 	flex-shrink: 0;
+	@include mobile {
+		width: 100%;
+	}
 }
 .contacts-form {
 	display: flex;
@@ -44,5 +61,9 @@
 			margin-top: 3px;
 			color: #91756a;
 		}
+	}
+
+	@include respond-to(1100px) {
+		gap: 62px 30px;
 	}
 }

@@ -2,4 +2,16 @@
 	width: 1276px;
 	margin: 0 auto;
 	padding: 0 15px;
+
+	@include respond-to(1299px) {
+		width: 960px;
+	}
+
+	@include mobile {
+		width: 650px;
+	}
+
+	@include respond-to(575px) {
+		width: 460px;
+	}
 }

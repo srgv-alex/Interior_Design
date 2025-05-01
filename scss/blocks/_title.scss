@@ -3,14 +3,24 @@
 	.title {
 		margin-bottom: 10px;
 	}
+	@include respond-to(360px) {
+		padding-top: 10px;
+		margin-bottom: 70px;
+	}
 }
 
 .portfolio__title {
 	margin-bottom: 51px;
+	@include mobile {
+		margin-bottom: 20px;
+	}
 }
 
 .about__title {
 	margin-bottom: 97px;
+	@include mobile {
+		margin-bottom: 30px;
+	}
 }
 .title2--white {
 	color: #fff;
