@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular);
+@import url(https://fonts.googleapis.com/css?family=Lora:regular);
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	// font-family: "Lora", serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1;
+}
+
+a,
+a:link,
+a:visited {
+	text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+	outline-offset: 1px;
+	outline: #005fcc auto 1px;
+}
+
+.title,
+.title2 {
+	font-family: 'Lora', sans-serif;
+	font-size: 80px;
+	line-height: 1.3;
+	color: #574e56;
+}
+
+.title2 {
+	font-size: 40px;
+}
+
+.text-upper {
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: #574e56;
+}
+
+.svg-arrow {
+	width: 12px;
+	height: 13px;
+	fill: #fff;
+}
+.svg-benance {
+	width: 24px;
+	height: 24px;
+	fill: #000;
+}
+
+.svg-email {
+	width: 24px;
+	height: 24px;
+	fill: #574e56;
+}
+.svg-insta {
+	width: 24px;
+	height: 24px;
+	fill: #000;
+}
+
+.svg-location {
+	width: 23px;
+	height: 33px;
+	fill: #000;
+}
+.svg-phone {
+	width: 18px;
+	height: 24px;
+	fill: #000;
+}
+
+.svg-pinterest {
+	width: 24px;
+	height: 24px;
+	fill: #000;
+}
